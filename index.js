@@ -186,18 +186,29 @@ function enableDownload() {
 
 
 
-
 function downloadPDF() {
   const element = document.getElementById("bonafideContainer");
   const opt = {
-    margin:       0.3,
-    filename:     `Bonafide_${regNoField.innerText.trim()}.pdf`,
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2 , useCORS: true,scrollY: 0},
-    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    margin: 0, 
+    filename: `Bonafide_${regNoField.innerText.trim()}.pdf`,
+    image: { type: 'jpeg', quality: 0.98 },
+
+    html2canvas: {
+      scale: 2,
+      scrollY: 0,
+      windowHeight: element.scrollHeight 
+    },
+    jsPDF: {
+      unit: 'mm',
+      format: 'a4',
+      orientation: 'portrait'
+    },
+    pagebreak: { mode: ['avoid-all'] } 
   };
+
   html2pdf().set(opt).from(element).save();
 }
+
 
 const downloadBtn = document.getElementById("downloadBtn");
 downloadBtn.addEventListener("click", (e) => {
