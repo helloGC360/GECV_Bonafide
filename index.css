@@ -193,7 +193,7 @@ input[type="submit"] {
 /* RIGHT SIDE - BONAFIDE SECTION */
 .mainbox .right {
   width: 50%;
-  min-width: 360px;
+  /* min-width: 360px; */
   aspect-ratio: 1 / 1.414;
   display: flex;
   flex-direction: column;
@@ -203,18 +203,6 @@ input[type="submit"] {
   
 }
 
-@media screen and (max-width: 600px) {
-  .mainbox .right {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .bonafideBox{
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
-
 .fa-download {
   position: absolute;
   color: var(--theme_clr);
@@ -222,18 +210,32 @@ input[type="submit"] {
   top: 10px;
   left: 10px;
   cursor: pointer;
-  display:block;
+  display:none;
+  z-index: 5;
 }
+
+
+@media screen and (max-width: 600px) {
+  .mainbox .right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .bonafideBox{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 
 
 /* BONAFIDE BOX STYLES */
 .bonafideBox {
   width: 100%;
-  aspect-ratio: 1 / 1.414;
+  height: auto;
   padding: 100px 40px 0px 40px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   position: relative;
-  overflow: scroll;
 }
 
 .upper {
