@@ -186,7 +186,7 @@ function enableDownload() {
 
 //download PDF function
 function downloadPDF() {
-  const element = document.getElementById("bonafideContainer");
+  const element = document.getElementById("bonafideBox");
   const opt = {
     margin: 0, // Set margin to 0 for full-page content
     filename: `Bonafide_${regNoField.innerText.trim()}.pdf`,//dynamic file name

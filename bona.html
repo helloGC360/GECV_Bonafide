@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            width: 220mm;
+            aspect-ratio: 1/1.414;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid;
+        }
+
+        .upper {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 70px;
+        }
+
+        .upper img {
+            width: 80px;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            border-radius: 50%;
+            background-position: center;
+        }
+       .upper .leftImg {
+            width: 94px;
+        }
+        .topInfo {
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .section,
+        .section2 {
+            margin: 20px 0px;
+            font-size: 16px;
+        }
+
+        .section p {
+            text-align: justify;
+            font-size: 17px;
+            /* number of columns */
+            line-height: 2;
+            word-spacing: 4px;
+        }
+
+        .section2 p {
+            text-align: justify;
+            /* number of columns */
+            line-height: 1.6;
+            font-size: 17px;
+        }
+
+
+        .sigBox{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .signature {
+            margin-top: 50px;
+            text-align: left;
+            line-height: 1.5;
+            font-size: 17px;
+        }
+
+        .box {
+            padding: 0px 60px;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+            height: calc(100% - 150px);
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        .box h2,
+        .box h3,
+        .box h4,
+        .box h5 {
+            text-align: center;
+        }
+
+        .box h2 {
+            margin: 50px;
+        }
+
+        .date {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="upper">
+            <img class="leftImg" src="./assets/bihar_sarkar.png" alt="@">
+            <div class="topInfo">
+                <h5>Department of Science & Technology, Govt. of Bihar</h5>
+                <h2>Government Engineering College, Vaishali</h2>
+                <h4 align="center">
+                    <u>Shyampur, Mansurpur, Bidupur, Vaishali - 844115</u>
+                </h4>
+                <p>Email Id. : principalgec@gecvaishali.org</p>
+                <p>website : www.gecvaishali.org</p>
+
+                <br />
+            </div>
+            <img src="./assets/logo.jpg" alt="@">
+        </div>
+
+
+        <hr>
+        <div class="box">
+            <div class="date">
+                <p><b>Letter No:</b> <span id="ltrNo">GEC/ACAD/BD/1234</span></p>
+                <span style="float:right"><b>Date:</b> <span id="date">05/01/2026</span></span>
+            </div>
+            <h2><u>BONAFIDE CERTIFICATE</u></h2>
+            <div class="section">
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is to certify that <b><span id="title">Mr./Ms. </span><span id="nameField"> ABC </span> </b>,
+                    bearing Registration No. <b><span id="regNoField">XXXXXXXXXXX</span></b>,
+                    is a bonafide student of this institute, studying in the
+                    <b>Bachelor of Technology (<span id="branchField"> Department Name </span>)</b>
+                    Semester/Year <b><span id="semesterField">Nth</span></b>Course during Academic Year <b><span
+                            id="academicYearField">20XX–20YY</span> </b>.
+                </p>
+            </div>
+
+            <div class="section2">
+                <p><b>The student details as as entered in our institute record are:</b></p>
+
+                <p>
+                    Date of Birth : 15 August 2003<br>
+                    Father’s Name : Mr. Suresh Kumar<br>
+                    Mother’s Name : Mrs. Anita Kumar<br>
+                    Date of Admission : 10 September 2021<br>
+                    Expected Year of Course Completion : 2025
+                </p>
+            </div>
+            <div class="sigBox">
+                <div class="signature">
+                <p>
+                    <b>Authorized Signature with Stamp</b><br>
+                    Name : Dr. R. K. Sharma<br>
+                    Designation : Principal<br>
+                    Mobile : 9876543210<br>
+                    Email : principal@gecvaishali.org
+                </p>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
