@@ -1,20 +1,26 @@
-
+/* CSS RESET AND GLOBAL VARIABLES */
 :root{
   --theme_clr:#aa0000;
 }
 
+
+/* GLOBAL STYLES */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+
+/* BODY AND MAIN SECTION */
 body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+
+/* MAIN SECTION */
 .s1 {
   width: 100vw;
   display: flex;
@@ -23,6 +29,8 @@ body {
    background-color: antiquewhite;
 }
 
+
+/* HEADING SECTION */
 .heading {
   padding: 10px 0px;
   width: 100vw;
@@ -53,13 +61,12 @@ body {
   .heading img{
     max-height: 50px;
   }
-
   
 }
 
 
 
-
+/* MAIN BOX SECTION */
 .mainbox {
   width: 100vw;
   display: flex;
@@ -67,16 +74,32 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+ /* LEFT SIDE - FORM SECTION */
 .mainbox .left {
   width: 50%;
   min-width: 360px;
   aspect-ratio: 1 / 1.414;
   position: relative;
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+  align-items: center;
 }
+
+.mainbox .left h4{
+  width: 100%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+  font-size: 15px;
+  color: var(--theme_clr);
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+   .mainbox .left h4{
+    font-size: 10px;
+   }
+}
+
 .customForm {
   width: 90%;
   min-width: 340px;
@@ -136,9 +159,6 @@ input[type="submit"] {
   border-radius: 10px;
 } 
 
-
-
-
 @media screen and (max-width: 600px) {
 
   .mainbox .left{
@@ -164,7 +184,7 @@ input[type="submit"] {
 
 
 
-
+/* RIGHT SIDE - BONAFIDE SECTION */
 .mainbox .right {
   width: 50%;
   min-width: 360px;
@@ -181,7 +201,6 @@ input[type="submit"] {
     width: 100%;
     margin-bottom: 30px;
   }
-
   .a4{
     width: 100%;
     margin-bottom: 30px;
@@ -232,7 +251,7 @@ p {
 
 
 
-
+/* FOOTER SECTION */
 footer {
   width: 100vw;
   padding: 10px 0px;
@@ -267,7 +286,7 @@ footer a{
 
 
 
-/* HTML: <div class="loader"></div> */
+/* Loader section */
 .loaderBox{
   width: 100vw;
   height: 100vh;
