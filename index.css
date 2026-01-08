@@ -139,7 +139,17 @@ input[type="submit"] {
 
 
 
+@media screen and (max-width: 600px) {
 
+  .mainbox .left,
+  .mainbox .right {
+    height: auto;
+    min-width: unset;
+    aspect-ratio: unset;
+    margin-bottom: 30px;
+  }
+  
+}
 
 
 
