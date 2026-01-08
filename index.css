@@ -151,11 +151,16 @@ input[type="submit"] {
   input[type="radio"] {
     margin-left: 10px;
   }
-
+  input[type="select"] {
+    width: 100%;
+    min-width: unset;
+    margin: 0px 10px;
+  }
+  select {
+    margin-left: 10px;
+    max-width: unset;
+  }
 }
-
-
-
 
 
 
