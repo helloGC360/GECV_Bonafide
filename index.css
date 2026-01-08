@@ -141,8 +141,7 @@ input[type="submit"] {
 
 @media screen and (max-width: 600px) {
 
-  .mainbox .left,
-  .mainbox .right {
+  .mainbox .left{
     height: auto;
     min-width: unset;
     aspect-ratio: unset;
