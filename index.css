@@ -74,7 +74,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  overflow-x: scroll;
 }
 
 /* LEFT SIDE - FORM SECTION */
@@ -99,12 +98,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .mainbox .left {
-    height: auto;
-    min-width: unset;
-    aspect-ratio: unset;
-    margin-bottom: 30px;
-  }
   .mainbox .left h4 {
     font-size: 10px;
   }
@@ -206,6 +199,8 @@ input[type="submit"] {
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-color: #fff;
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -214,7 +209,7 @@ input[type="submit"] {
     margin-bottom: 30px;
   }
 
-  .bonafideBox{
+  .bonfideBox{
     width: 100%;
     margin-bottom: 30px;
   }
@@ -227,19 +222,17 @@ input[type="submit"] {
   top: 10px;
   left: 10px;
   cursor: pointer;
-  display:none;
+  display:block;
 }
 
 
 /* BONAFIDE BOX STYLES */
-.bonafideBox {
+.bonfideBox {
   width: 100%;
-  min-width: 600px;
   aspect-ratio: 1 / 1.414;
   padding: 100px 40px 0px 40px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   position: relative;
-  background-color: white;
   overflow: scroll;
 }
 
