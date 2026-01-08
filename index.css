@@ -44,6 +44,22 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+
+  .heading h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .heading img{
+    max-height: 50px;
+  }
+
+  
+}
+
+
+
+
 .mainbox {
   width: 100vw;
   display: flex;
