@@ -175,6 +175,18 @@ input[type="submit"] {
   position: relative;
 }
 
+@media screen and (max-width: 600px) {
+
+  .mainbox .left{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .a4{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 
 .fa-download {
   position: absolute;
