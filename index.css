@@ -148,7 +148,10 @@ input[type="submit"] {
     aspect-ratio: unset;
     margin-bottom: 30px;
   }
-  
+  input[type="radio"] {
+    margin-left: 10px;
+  }
+
 }
 
 
